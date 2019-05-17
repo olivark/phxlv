@@ -2,6 +2,14 @@
 
 To start your Phoenix server:
 
+- Generate signing salt with `mix phx.gen.secret 32` and add it to 
+`# config/config.exs
+
+config :my_app, MyAppWeb.Endpoint,
+   live_view: [
+     signing_salt: "SECRET_SALT"
+   ]
+`
 - Install dependencies with `mix deps.get`
 - Create and migrate your database with `mix ecto.setup`
 - Install Node.js dependencies with `cd assets && npm install`
