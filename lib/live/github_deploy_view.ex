@@ -7,6 +7,7 @@ defmodule PhxliveviewWeb.GithubDeployView do
       <div>
         <div>
           <button phx-click="github_deploy">Deploy to GitHub</button>
+          <button phx-click="github_deploy_cancel">Cancel</button>
         </div>
         Status: <%= @deploy_step %>
       </div>
@@ -21,5 +22,10 @@ defmodule PhxliveviewWeb.GithubDeployView do
   def handle_event("github_deploy", _value, socket) do
     # do the deploy process
     {:noreply, assign(socket, deploy_step: "Starting deploy...")}
+  end
+
+  def handle_event("github_deploy_cancel", _value, socket) do
+    # do the deploy process
+    {:noreply, assign(socket, deploy_step: "Cancelling deploy...")}
   end
 end
