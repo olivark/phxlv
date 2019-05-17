@@ -11,7 +11,7 @@ config :my_app, MyAppWeb.Endpoint,
 </pre>
 
 - Install dependencies with `mix deps.get`
-- Create and migrate your database with `mix ecto.setup`
+- Create and migrate your database with `mix ecto.setup`. Make sure you got your postgres db running.
 - Install Node.js dependencies with `cd assets && npm install`
 - Start Phoenix endpoint with `mix phx.server`
 
@@ -26,6 +26,7 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 - Docs: https://hexdocs.pm/phoenix
 - Mailing list: http://groups.google.com/group/phoenix-talk
 - Source: https://github.com/phoenixframework/phoenix
+- Phoenix LiveView: https://github.com/phoenixframework/phoenix_live_view
 
 # phxlv
 
