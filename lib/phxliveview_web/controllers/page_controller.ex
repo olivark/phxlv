@@ -7,6 +7,7 @@ defmodule PhxliveviewWeb.PageController do
   # end
 
   def index(conn, _) do
-    LiveView.Controller.live_render(conn, PhxliveviewWeb.GithubDeployView, session: %{})
+    LiveView.Controller.live_render(conn, PhxliveviewWeb.AutoSuggestView, session: %{})
+    # LiveView.Controller.live_render(conn, PhxliveviewWeb.GithubDeployView, session: %{})
   end
 end
